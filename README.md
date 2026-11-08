@@ -42,3 +42,9 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
+
+## Deployment
+
+Vercel builds and deploys the `develop` branch using Nuxt's automatic Vercel preset.
+The output directory is detected automatically and must not be set to the local
+`.output` directory.
