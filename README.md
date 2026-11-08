@@ -1,23 +1,24 @@
-# Nuxt Minimal Starter
+# Rick and Morty
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A responsive Nuxt 4 application for exploring Rick and Morty characters.
+It uses Tailwind CSS, SSR, a layered data architecture, and the Rick and
+Morty GraphQL API.
+
+## Requirements
+
+- Node.js 24.15 or newer
 
 ## Setup
 
-Make sure to install dependencies:
+```bash
+npm install
+npm run dev
+```
+
+The GraphQL endpoint defaults to the Rick and Morty API. Override it with:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+NUXT_PUBLIC_GRAPHQL_ENDPOINT=https://example.com/graphql npm run dev
 ```
 
 ## Development Server
@@ -25,17 +26,7 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -43,33 +34,11 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
